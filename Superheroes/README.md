@@ -1,5 +1,4 @@
-# This folder is going to contain some of my work using a dataset.
-
-## I'm a junior Computer Science student!
+### This folder is going to contain some of my work using a dataset.
+### This will mean everything from charts, to correlational studies, etc.
 
 ⚡️
