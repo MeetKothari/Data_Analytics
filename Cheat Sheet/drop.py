@@ -33,7 +33,6 @@ df.drop("Difficulty_Score", axis=1, inplace=True)
 # inplace=True – specifies the drop operation should happen in same dataframe and no copy of the dataframe should be created.
 
 # You can use df.columns[index1, index2, indexn] to identify the list of column names in that index positions and pass that list to the drop method.
-
 # An index is 0 based. Use 0 to delete the first column and 1 to delete the second column and so on.
 
 df.drop(df.columns[[1, 2]], axis = 1, inplace = True)
@@ -45,8 +44,7 @@ df.drop(df.columns[[1, 2]], axis = 1, inplace = True)
 # inplace=True – specifies the drop operation should happen in same dataframe and no copy of the dataframe should be created.
 
 # By default, during the drop operation if the column is not existing in the dataframe, then the error KeyError: "['Difficulty_Score' 'Type'] not found in axis" will be raised.
-
-#To drop column only if exists without raising any error, then you can specify errors='ignore' in the drop method as shown below.
+# To drop column only if exists without raising any error, then you can specify errors='ignore' in the drop method as shown below.
 
 df.drop(["Difficulty_Score", "Type"], axis=1, inplace= True, errors='ignore')
 
@@ -71,9 +69,7 @@ df.loc[:, :'specific_column']
 # :'specific_column' – means select columns from the first column until the specific_column.
 
 # You may want to use this when you want to delete a column with a value that has a specific value so that you can ignore those values in the data analysis.
-
 # You can evaluate the row value by using an IF statement.
-
 # In the IF statement, you can pass the condition which needs to be evaluated.
 
 # For example,
